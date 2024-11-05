@@ -46,7 +46,7 @@
 
 import { dataObject, errorObject } from "@/utils";
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
 const { TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_VERIFY_SERVICE_SID } =
   process.env;
