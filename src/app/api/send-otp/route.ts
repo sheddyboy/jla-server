@@ -58,6 +58,7 @@ if (!TWILIO_ACCOUNT_SID || !TWILIO_AUTH_TOKEN || !TWILIO_VERIFY_SERVICE_SID) {
 export async function POST(request: Request) {
   try {
     const { phoneNumber } = await request.json();
+    console.log({ phoneNumber });
 
     if (!phoneNumber) {
       return errorObject(new Error("Phone number is required"), 400);
